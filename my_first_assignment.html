@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Paradise</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        nav {
+            background-color: #333;
+            color: red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        nav img {
+            height: 60px;
+        }
+        nav a {
+            color: yellow;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        header {
+            position: relative;
+            height: 500px;
+            text-align: center;
+            color: black;
+        }
+        header::before {
+            content: "";
+            background: url('cinema.jpeg') no-repeat center center/cover;
+            filter: blur(3px);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        header h1 {
+            margin-top: 0;
+            padding-top: 100px;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.5em;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section-image {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .about, .contact {
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about h2, .contact h2 {
+            margin-top: 0;
+        }
+        .subsection {
+            padding: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .subsection h3 {
+            margin-top: 0;
+            margin-right: 20px;
+        }
+        .subsection img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1D_TQo6E1YGbEOgjlYq9t51Ru28TDI04Yew&s" alt="Movie Paradise Logo">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#now-showing">Now Showing</a>
+            <a href="#coming-soon">Coming Soon</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <header id="home">
+        <h1>Welcome to Movie Paradise</h1>
+        <p>Your ultimate destination for movie lovers</p>
+    </header>
+
+    <section id="now-showing">
+        <h2>Now Showing</h2>
+        <p>Catch the latest blockbusters in theaters now.</p>
+        <img src="https://thumbs.dreamstime.com/b/now-showing-movie-cinema-poster-design-retro-billboard-sign-spotlights-theater-curtain-background-vector-illustration-144477904.jpg" alt="Now Showing" class="section-image">
+        <div class="subsection">
+            <h3>Action</h3>
+            <p>Experience the thrill with our action-packed movies.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy7IhZOKmI2NDKOcNuQifBzsNtVNgBzBIoTA&s" alt="Action Movies" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Comedy</h3>
+            <p>Laugh out loud with our hilarious comedies.</p>
+            <img src="https://assets.isu.pub/document-structure/230614103815-4a13408f593743491113e9540c02aa8f/v1/3340dc040861046ef8cae24283120612.jpeg" alt="Comedy Movies" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Drama</h3>
+            <p>Get engrossed in our dramatic films.</p>
+            <img src="https://lh4.googleusercontent.com/proxy/Myx_krNiAu-wrhtxXI1dKZwdmD96vIdd-dawmkiWVLKKOHfgxSgBJFKOCS9UiBuzzIWGDwjGuiuPttM1Lgs0e8tYZB4Qsh95b1r9yg7LG03y" alt="Drama Movies" class="section-image">
+        </div>
+    </section>
+
+    <section id="coming-soon">
+        <h2>Coming Soon</h2>
+        <p>Check out the movies that are coming to theaters soon.</p>
+        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/coming-soon-templates-design-f8fe6fab7db7c211044374a140e5990f_screen.jpg?ts=1695128599" alt="Coming Soon" class="section-image">
+        <div class="subsection">
+            <h3>Fantasy</h3>
+            <p>Embark on a magical journey with our fantasy films.</p>
+            <img src="https://imgc.allpostersimages.com/img/posters/disney-beauty-and-the-beast-triptych-2-premium-poster_u-L-F9TNU70.jpg" alt="Fantasy Movies" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Horror</h3>
+            <p>Get ready to be scared with our horror movies.</p>
+            <img src="https://i.pinimg.com/736x/79/b0/46/79b046555f6b26f90650a5fd15040da5.jpg" alt="Horror Movies" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Romance</h3>
+            <p>Fall in love with our romantic films.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUJwnJ1wGPpzHNc_aD_pSRCEiD9OVC5UIgow&s" alt="Romance Movies" class="section-image">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are a community of movie enthusiasts dedicated to sharing our love for films and cinema.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out with your questions or feedback.</p>
+        <p>Email: info@movieparadise.com</p>
+        <p>Phone: 9876543210</p>
+    </section>
+
+</body>
+</html>
